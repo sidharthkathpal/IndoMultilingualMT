@@ -1,0 +1,25 @@
+# toy_en_de.yaml
+
+## Where the samples will be written
+save_data: /content/translation/run/id-su/example
+## Where the vocab(s) will be written
+src_vocab: /content/translation/id-su/example.vocab.src
+tgt_vocab: /content/translation/id-su/example.vocab.tgt
+# Prevent overwriting existing files in the folder
+overwrite: False
+world_size: 1
+gpu_ranks: [0]
+
+# Where to save the checkpoints
+save_model: "/content/translation/id-su/model"
+save_checkpoint_steps: 500
+train_steps: 1000000
+valid_steps: 500
+# Corpus opts:
+data:
+    corpus_1:
+        path_src: "/content/drive/My Drive/Assignment 2/FinalProject/data/su-id/id_train.txt"
+        path_tgt: "/content/drive/My Drive/Assignment 2/FinalProject/data/su-id/su_train.txt"
+    valid:
+        path_src: "/content/drive/My Drive/Assignment 2/FinalProject/data/su-id/id_val.txt"
+        path_tgt: "/content/drive/My Drive/Assignment 2/FinalProject/data/su-id/su_val.txt"

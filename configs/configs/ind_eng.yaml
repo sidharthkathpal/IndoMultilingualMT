@@ -1,0 +1,25 @@
+# ind_eng.yaml
+
+## Where the samples will be written
+save_data: /content/indonesian-mt-data/run/example
+## Where the vocab(s) will be written
+src_vocab: /content/indonesian-mt-data/run/example.vocab.src
+tgt_vocab: /content/indonesian-mt-data/run/example.vocab.tgt
+# Prevent overwriting existing files in the folder
+overwrite: True
+world_size: 1
+gpu_ranks: [0]
+
+# Where to save the checkpoints
+save_model: ind_eng/run/model
+save_checkpoint_steps: 2500
+train_steps: 40000
+valid_steps: 2500
+# Corpus opts:
+data:
+    corpus_1:
+        path_tgt: /content/indonesian-mt-data/religious/train.en.0
+        path_src: /content/indonesian-mt-data/religious/train.id.0
+    valid:
+        path_tgt: /content/indonesian-mt-data/religious/valid.en
+        path_src: /content/indonesian-mt-data/religious/valid.id
