@@ -1,6 +1,6 @@
 # IndoMultilingualMT
 
-### Report - [Multilingual_Machine_Translation_for_Indonesian_Languages](/IndoMultilingualMT/Final_Report.pdf)
+### Report - [Multilingual_Machine_Translation_for_Indonesian_Languages](Final_Report.pdf)
 
 ## Directory Structure
 
