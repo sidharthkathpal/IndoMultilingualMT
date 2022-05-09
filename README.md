@@ -1,5 +1,7 @@
 # IndoMultilingualMT
 
+### Report - 
+![Analysis](Multilingual_Machine_Translation_for_Indonesian_Languages (2).pdf)
 
 ## Directory Structure
 
